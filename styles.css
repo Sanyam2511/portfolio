@@ -155,43 +155,93 @@ body {
   color: #374151;
 }
 
-.skills-grid {
+/* Skills Section */
+#skills {
+  background-color: #f3f4f6; /* light gray */
+  padding: 3rem 1rem;
+}
+
+#skills .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #4338ca;
+  margin-bottom: 2.5rem;
+}
+
+/* Grid layout for skill cards */
+#skills .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 24px;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
-.skill-card {
+
+#skills .bg-white {
   background: white;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 15px 30px rgba(145, 158, 171, 0.2);
-  transition: box-shadow 0.3s ease;
+  border-radius: 1.5rem;
+  box-shadow: 0 15px 30px rgba(145, 158, 171, 0.15);
+  padding: 1.5rem 1.75rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: default;
 }
-.skill-card:hover {
+#skills .bg-white:hover,
+#skills .bg-white:focus {
   box-shadow: 0 25px 40px rgba(79, 70, 229, 0.3);
+  transform: translateY(-5px);
+  outline: none;
 }
-.skill-card h3 {
-  margin-bottom: 12px;
+
+#skills h3 {
+  font-size: 1.25rem;
   font-weight: 600;
-  color: #4A4E69;
+  margin-bottom: 0.5rem;
+  color: #4338ca;
 }
-.skill-bar {
-  background: #e0e7ff;
-  border-radius: 10px;
-  height: 16px;
-  overflow: hidden;
+
+#skills p {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 1rem;
+  line-height: 1.4;
 }
-.skill-level {
-  height: 100%;
-  background: #a5b4fc;
-  border-radius: 10px 0 0 10px;
-  width: 0;
-  animation: fillBar 2s forwards;
+
+#skills span {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  user-select: none;
 }
-@keyframes fillBar {
-  from { width: 0; }
-  to { width: var(--skill-width, 0); }
+
+.bg-green-100 {
+  background-color: #d1fae5;
+  color: #065f46;
 }
+.bg-green-200 {
+  background-color: #a7f3d0;
+  color: #065f46;
+}
+.bg-yellow-200 {
+  background-color: #fde68a;
+  color: #92400e;
+}
+
+@media (max-width: 640px) {
+  #skills {
+    padding: 2rem 1rem;
+  }
+  #skills h2 {
+    font-size: 1.75rem;
+  }
+}
+
 
 .education-list {
   list-style: none;
