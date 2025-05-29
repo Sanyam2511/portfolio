@@ -174,64 +174,69 @@ body {
   color: #4338ca;
   margin-bottom: 2.5rem;
 }
+#skills-section {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
 
-/* Grid layout for skill cards */
-#skills .grid {
+#skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-#skills .bg-white {
+.skill-card {
   background: white;
-  border-radius: 1.5rem;
-  box-shadow: 0 15px 30px rgba(145, 158, 171, 0.15);
-  padding: 1.5rem 1.75rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  cursor: default;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
 }
-#skills .bg-white:hover,
-#skills .bg-white:focus {
-  box-shadow: 0 25px 40px rgba(79, 70, 229, 0.3);
+
+.skill-card:hover {
   transform: translateY(-5px);
-  outline: none;
 }
 
-#skills h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #4338ca;
+.skill-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
-#skills p {
+.skill-card p {
   font-size: 0.9rem;
-  color: #374151;
-  margin-bottom: 1rem;
-  line-height: 1.4;
+  color: #555;
+  margin-bottom: 15px;
 }
 
-#skills span {
+.badge {
   display: inline-block;
-  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  user-select: none;
+  color: white;
 }
 
-.bg-green-100 {
-  background-color: #d1fae5;
-  color: #065f46;
+.badge-advanced {
+  background-color: #38b000;
 }
-.bg-green-200 {
-  background-color: #a7f3d0;
-  color: #065f46;
+
+.badge-intermediate {
+  background-color: #ffb703;
 }
-.bg-yellow-200 {
-  background-color: #fde68a;
-  color: #92400e;
+
+.badge-beginner {
+  background-color: #e63946;
 }
+
 
 @media (max-width: 640px) {
   #skills {
