@@ -155,9 +155,8 @@ body {
   color: #374151;
 }
 
-/* Skills Section */
 #skills {
-  background-color: #f3f4f6; /* light gray */
+  background-color: #f3f4f6; 
   padding: 3rem 1rem;
 }
 
@@ -216,28 +215,6 @@ body {
   margin-bottom: 15px;
 }
 
-.badge {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: white;
-}
-
-.badge-advanced {
-  background-color: #38b000;
-}
-
-.badge-intermediate {
-  background-color: #ffb703;
-}
-
-.badge-beginner {
-  background-color: #e63946;
-}
-
-
 @media (max-width: 640px) {
   #skills {
     padding: 2rem 1rem;
@@ -246,7 +223,6 @@ body {
     font-size: 1.75rem;
   }
 }
-
 
 .education-list {
   list-style: none;
